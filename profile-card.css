@@ -1,0 +1,119 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(229, 23%, 23%);
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#name,
+.stats {
+  font-size: 1.125em;
+  text-align: center;
+}
+
+.very-small-text {
+  font-size: 10px;
+  text-align: center;
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 1px;
+  margin-top: 2px;
+  font-weight: 400;
+}
+
+#container {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0px 30px 70px hsla(0, 0%, 0%, 0.432);
+}
+
+#top {
+  height: 7.5em;
+  background-image: url(images/bg-pattern-card.svg);
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+#image-container {
+  position: relative;
+  top: -12%;
+  display: flex;
+  justify-content: center;
+}
+
+#image {
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+#middle {
+  border-bottom: 0.4px solid hsl(0, 0%, 80%);
+  margin-top: -25px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#number {
+  font-weight: 500;
+  color: hsl(0, 0%, 59%);
+  text-decoration: none;
+}
+
+#location {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  font-size: 0.8125em;
+  margin-top: 0.3125em;
+  margin-bottom: 1.25em;
+}
+
+#bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+
+.attribution {
+  font-size: 0.6875em;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 440px) {
+  #container {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 30px 70px hsla(0, 0%, 0%, 0.432);
+  }
+}
+
+@media screen and (max-width: 279px) {
+  #container {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 0;
+  }
+}
